@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.11.1",
+    "natural": "^8.1.0",
     "twit": "^2.2.3"
   }
 }
