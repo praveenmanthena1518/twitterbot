@@ -139,3 +139,13 @@ stream.on('error', function (error) {
   //print out the error
   console.log(error);
 });
+
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Twitter Voting Bot is running.\n');
+}).listen(PORT, () => {
+  console.log(`Bot server running on port ${PORT}`);
+});
